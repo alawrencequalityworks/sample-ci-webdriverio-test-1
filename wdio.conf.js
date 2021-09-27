@@ -32,9 +32,7 @@ exports.config = {
     waitforTimeout: 10000,
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
-    services: [
-        ['selenium-standalone', { drivers: { firefox: '0.29.1', chrome: true, chromiumedge: 'latest' } }]
-    ],
+    services: ['selenium-standalone'],
     framework: 'mocha',
     reporters: ['spec'],
 
