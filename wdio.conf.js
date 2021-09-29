@@ -18,9 +18,8 @@ exports.config = {
     capabilities: [{
         maxInstances: 5,
         browserName: 'chrome',
-        'goog:chromeOptions': {
-            //For a list of all args(see https://developers.google.com/web/updates/2017/04/headless-chrome)
-            args: ['--headless', '--disable-gpu'],
+        'wdio:devtoolsOptions': {
+            headless: true
         },
 
         acceptInsecureCerts: true,
@@ -32,7 +31,6 @@ exports.config = {
     waitforTimeout: 10000,
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
-    services: ['selenium-standalone'],
     framework: 'mocha',
     reporters: ['spec'],
 
