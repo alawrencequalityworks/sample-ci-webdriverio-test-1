@@ -27,7 +27,7 @@ exports.config = {
 
     logLevel: 'error',
     bail: 0,
-    baseUrl: 'http://localhost:3000',
+    baseUrl: 'https://ciexample121.loca.lt',
     waitforTimeout: 10000,
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
