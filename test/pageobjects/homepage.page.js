@@ -6,7 +6,7 @@ class Homepage {
     get error() { return $('body pre') }
 
     open() {
-        return browser.url('https://ciexample121.loca.lt');
+        return browser.url('/');
     }
 }
 

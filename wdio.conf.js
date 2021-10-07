@@ -1,3 +1,11 @@
+require('dotenv').config();
+const URL = process.env.URL;
+
+if (!URL) {
+    console.log('Please use the following format when running the test script: URL=https://quiet-newt-23.loca.lt [script]');
+    process.exit();
+}
+
 exports.config = {
     runner: 'local',
     specs: [
@@ -27,7 +35,7 @@ exports.config = {
 
     logLevel: 'error',
     bail: 0,
-    baseUrl: 'https://ciexample121.loca.lt',
+    baseUrl: URL,
     waitforTimeout: 10000,
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
