@@ -9,7 +9,7 @@
 - *test/specs:* This contains test files which include the different tests and test suites.
 
 ### Run all tests
-`npm test`
+`URL=https://ciexample121.loca.lt/ npm test`
 
 ### Run test by test file
-`npm run test -- --spec ./test/specs/homepage.test.js`
+`URL=https://ciexample121.loca.lt/ npm run test -- --spec ./test/specs/homepage.test.js`
