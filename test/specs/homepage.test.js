@@ -14,6 +14,7 @@ describe('Homepage', () => {
 
         if (await HomePage.continueBtn.isDisplayed()) {
             await HomePage.continueBtn.click();
+            console.log('Was it here?');
         }
     });
     it('Verfy that the header title is displayed correctly', async () => {
