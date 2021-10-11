@@ -14,6 +14,7 @@ describe('Homepage', () => {
 
         if (await HomePage.continueBtn.isDisplayed()) {
             await HomePage.continueBtn.click();
+            await HomePage.continueBtn.click();
             console.log('Was it here?');
         }
     });
