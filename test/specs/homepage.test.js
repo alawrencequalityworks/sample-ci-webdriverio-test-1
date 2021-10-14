@@ -14,14 +14,13 @@ describe('Homepage', () => {
 
         if (await HomePage.continueBtn.isDisplayed()) {
             await HomePage.continueBtn.click();
-            await HomePage.continueBtn.click();
             console.log('Was it here?');
         }
     });
     it('Verfy that the header title is displayed correctly', async () => {
         console.log('Continue Button??: ' + await HomePage.continueBtn.isDisplayed());
-        // await HomePage.headerTitle.waitForDisplayed();
-        // await expect(HomePage.headerTitle).toHaveText(homepageData.title);
+        await HomePage.headerTitle.waitForDisplayed();
+        await expect(HomePage.headerTitle).toHaveText(homepageData.title);
     });
 });
 

@@ -1,3 +1,3 @@
 module.exports = {
-    title: 'Welcome to Our Sample Application!'
+    title: 'Welcome to FIX Sample Application!'
 };
