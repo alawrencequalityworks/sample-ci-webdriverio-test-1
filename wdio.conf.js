@@ -27,9 +27,7 @@ exports.config = {
         maxInstances: 5,
         browserName: 'chrome',
         'wdio:devtoolsOptions': {
-            headless: true,
-            defaultViewport: null,
-            userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36'
+            headless: true
         },
 
         acceptInsecureCerts: true,
