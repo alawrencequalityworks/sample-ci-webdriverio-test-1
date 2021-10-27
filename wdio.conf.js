@@ -28,7 +28,8 @@ exports.config = {
         browserName: 'chrome',
         'wdio:devtoolsOptions': {
             headless: true,
-            defaultViewport: null
+            defaultViewport: null,
+            userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36'
         },
 
         acceptInsecureCerts: true,
@@ -51,4 +52,10 @@ exports.config = {
         const random = require('chance').Chance();
         global.random = random
     },
+    async afterTest(test, context, { error }) {
+        // take a screenshot anytime a test fails and throws an error
+        if (error) {
+            await browser.saveScreenshot(`./screenshots/${error}.png`);
+        }
+    }
 }
