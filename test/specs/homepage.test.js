@@ -21,6 +21,7 @@ describe('Homepage', () => {
     });
     it('Verfy that the header title is displayed correctly', async () => {
         console.log('Continue Button??: ' + await HomePage.continueBtn.isDisplayed());
+        await browser.pause(5000);
         await HomePage.headerTitle.waitForDisplayed();
         await browser.saveScreenshot(`./screenshots/beforeHeader.png`);
         await expect(HomePage.headerTitle).toHaveText(homepageData.title);
