@@ -36,7 +36,7 @@ exports.config = {
     logLevel: 'error',
     bail: 0,
     baseUrl: URL,
-    waitforTimeout: 20000,
+    waitforTimeout: 10000,
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
     framework: 'mocha',
